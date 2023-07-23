@@ -42,6 +42,9 @@ int main()
 
     //Q_Learning but able to specifing depth of Forward looking(4th paramter)
     agents.emplace_back(new NStepQAgent(0.4, 0.95, 0.2, 2, 0.90));
+    
+    //Q_Learning with NeuralNetwork
+    agents.emplace_back(new DQNAgent(0.4, 0.95,{GRID_SIZE*2,50,20,4},{ReLU::get(),ReLU::get(),RTanH::get()})); //Not yet Working
 
     //Adjust cellSize for samller Monitors
     RLGUI rlgui(sf::VideoMode(cellSize * GRID_SIZE + 350, cellSize * GRID_SIZE), "Reinforcment LEarning Test", 7);

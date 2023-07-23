@@ -159,10 +159,14 @@
     <ClInclude Include="DQNAgent.h" />
     <ClInclude Include="Enviroment.h" />
     <ClInclude Include="GUI.h" />
+    <ClInclude Include="names.h" />
     <ClInclude Include="NeuralNetwork.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="QAgent.h" />
     <ClInclude Include="SARSA.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

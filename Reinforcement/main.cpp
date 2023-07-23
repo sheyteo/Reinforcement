@@ -3,8 +3,9 @@
 #include "QAgent.h"
 #include "SARSA.h"
 #include "DoubleQAgent.h"
-#include "NStepQAgent.h" //Needs optimisation
-#include "DQNAgent.h" //Not yet Working
+#include "NStepQAgent.h"
+#include "DQNAgent.h"
+#include "names.h"
 #include "GUI.h"
 
 /// CONTROLS    Iterations per Visualsisation
@@ -14,19 +15,13 @@
 /// NUM3     -> 50
 /// NUM4     -> 100
 /// NUM5     -> 200
-/// NUM6     -> 1000
+/// NUM6     -> 500
 
 /// ENTER -> Finish this Visualsisation
 /// ESCAPE -> close Program
 
-uint32_t Agent::agentCounter = 0;
-std::string NStepQAgent::NAME = "NStepQAgent";
-std::string QAgent::NAME = "QAgent";
-std::string SARSA::NAME = "SARSA";
-std::string DQNAgent::NAME = "DQNAgent";
-std::string DoubleQAgent::NAME = "DQAgent";
-
-
+/// Playing around with the parameters changes the behaviour of the Agents so feel free to expiriment
+ 
 int main()
 {
     Environment gridWorld;
